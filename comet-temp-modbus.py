@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from asyncio.sslproto import SSLProtocol
 import time
 import urllib3
 import requests
