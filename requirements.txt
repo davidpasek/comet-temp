@@ -1,2 +1,2 @@
 pyModbusTCP
-
+requests
