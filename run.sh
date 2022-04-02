@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run --name comet-temp --rm comet-temp
+/usr/bin/docker run --name comet-temp --rm comet-temp
