@@ -30,7 +30,7 @@ def main():
         UdpTransportTarget((ip_address, 161)),
         ContextData(),
         0, 10,  # fetch up to 10 OIDs one-shot
-        ObjectType(ObjectIdentity('.1.3.6.1.4.1.22626.1.5.2.1'))):
+        ObjectType(ObjectIdentity('.1.3.6.1.4.1.22626.1.5.2.1.2.0'))):
     if errorIndication or errorStatus:
         print(errorIndication or errorStatus)
         break
@@ -40,7 +40,7 @@ def main():
             print(' = '.join([x.prettyPrint() for x in varBind]))
 
   # Send to LogInsight
-  log_message = "Comet device: P8510 IP: " + ip_address + " Proto: Modbus Temperature: " + str(temp)
+  log_message = "Comet device: P8510 IP: " + ip_address + " Proto: SNMP Temperature: " + str(temp)
   print("Log message:",log_message)
   response=sendMsgToLogInsight("syslog.home.uw.cz",log_message)
   print ("Response:", response)

@@ -7,5 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./comet-temp-snmp.py" ]
+CMD [ "python", "./comet-temp-modbus.py" ]
 
